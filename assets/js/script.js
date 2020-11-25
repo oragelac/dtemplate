@@ -3,7 +3,15 @@ function main(dashboard){
     dashboard.tabs = {
         "test" : {
             "name" : "Test tab",
-            "navname" : "Tab navname"
+            "navname" : "Tab navname",
+            "info" : {
+                "content" : "info box test"
+            },
+            "gallery" : {
+                "items" : {
+                    "url" : "https://images5.alphacoders.com/323/323327.jpg"
+                }
+            }
         }
     }
 
