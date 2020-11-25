@@ -1,5 +1,6 @@
 function main(dashboard){
     println(dashboard)
+
     dashboard.tabs = {
         "test" : {
             "name" : "Test tab",
@@ -9,13 +10,17 @@ function main(dashboard){
             },
             "gallery" : {
                 "items" : {
-                    "url" : "https://images5.alphacoders.com/323/323327.jpg"
+                    "background" : {
+                        "name" : "A test background image",
+                        "url" : "https://images5.alphacoders.com/323/323327.jpg"
+                    }
                 }
             }
         }
     }
-
+    query('body').innerHTML = ''
     parse(dashboard, 'body', dashboard.references)
+    println(dashboard)
 }
 
 function init(dashboard) {}
